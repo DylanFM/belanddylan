@@ -1,3 +1,6 @@
 <h2>Received your invite?</h2>
 <p>Enter the super secret password below.</p>
-<input type="password" />
+<form ng-submit="checkAuth()">
+  <input type="password" ng-model="password" placeholder="sekret" />
+  <input type="submit" value="Enter" />
+</form>

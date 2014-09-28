@@ -16,7 +16,7 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config ($routeProvider) ->
+  .config ($routeProvider, $locationProvider) ->
     $routeProvider
       .when '/',
         templateUrl: 'views/main.html'
@@ -26,4 +26,4 @@ angular
         controller: 'GuestsCtrl'
       .otherwise
         redirectTo: '/'
-
+    $locationProvider.html5Mode(true)

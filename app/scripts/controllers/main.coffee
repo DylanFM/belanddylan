@@ -8,9 +8,8 @@
  # Controller of the belanddylanApp
 ###
 angular.module('belanddylanApp')
-  .controller 'MainCtrl', ($scope) ->
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate'
-      'AngularJS'
-      'Karma'
-    ]
+  .controller 'MainCtrl', ($scope, $location) ->
+
+    $scope.checkAuth = ->
+      if $scope.password is 'test'
+        $location.path '/guests'
