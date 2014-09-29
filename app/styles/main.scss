@@ -40,10 +40,16 @@ p {
   line-height: 1.5em;
 }
 
-input {
+button, input {
   background: rgba(255,255,255,0.5);
   font-size: inherit;
   padding: .3em .5em;
   border: 1px solid rgba(0,0,0,0.3);;
   border-radius: .2em;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
