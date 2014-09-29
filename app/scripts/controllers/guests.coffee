@@ -8,7 +8,5 @@
  # Controller of the belanddylanApp
 ###
 angular.module('belanddylanApp')
-  .controller 'GuestsCtrl', ($scope, $cookieStore, $location) ->
-
-    unless $cookieStore.get('authd') is 'yep'
-      $location.path '/'
+  .controller 'GuestsCtrl', ($scope, Auth) ->
+    Auth.ensure()
