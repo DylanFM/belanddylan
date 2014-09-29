@@ -2,11 +2,11 @@
 
 ###*
  # @ngdoc function
- # @name belanddylanApp.controller:GuestsCtrl
+ # @name belanddylanApp.controller:RsvpCtrl
  # @description
- # # GuestsCtrl
+ # # RsvpCtrl
  # Controller of the belanddylanApp
 ###
 angular.module('belanddylanApp')
-  .controller 'GuestsCtrl', (Auth) ->
+  .controller 'RsvpCtrl', ($scope, Auth) ->
     Auth.ensure()

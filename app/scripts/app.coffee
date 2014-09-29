@@ -24,6 +24,9 @@ angular
       .when '/guests',
         templateUrl: 'views/guests.html'
         controller: 'GuestsCtrl'
+      .when '/rsvp',
+        templateUrl: 'views/rsvp.html'
+        controller: 'RsvpCtrl'
       .otherwise
         redirectTo: '/'
     # $locationProvider.html5Mode(true)

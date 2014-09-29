@@ -21,13 +21,8 @@ html {
   background-color: #fbfbfc;
   color: #434551;
 }
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .container {
+  margin: 2em auto 0;
   font-size: 150%;
   min-width: 300px;
   max-width: 60%;
