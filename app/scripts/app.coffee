@@ -14,7 +14,8 @@ angular
     'ngCookies',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'uuid4'
   ])
   .config ($routeProvider, $locationProvider) ->
     $routeProvider

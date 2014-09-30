@@ -18,6 +18,7 @@
     <input type="email" ng-model="email" enter-submit="setStep('done')" placeholder="Your email" />
     <br />
     <input type="phone" ng-model="phone" enter-submit="setStep('done')" placeholder="Your phone number" />
+    <i>If you include your country code (e.g +61) we can SMS you from the website.</i>
     <br />
     <button ng-show="email.length || phone.length" ng-click="setStep('done')">There you go</button>
   </li>
