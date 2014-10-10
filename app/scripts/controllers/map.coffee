@@ -16,7 +16,7 @@ angular.module('belanddylanApp')
         tileLayer: 'https://{s}.tiles.mapbox.com/v3/fires.jlh1kf2i/{z}/{x}/{y}.png'
         attributionControl: false
 
-    $scope.markers = []
+    $scope.items = []
 
     # Fetch GeoJSON
     $http.get('/scripts/data/combined.geojson')
@@ -45,16 +45,34 @@ angular.module('belanddylanApp')
               'icon': item.properties['marker-symbol']
               'color': item.properties['marker-color']
 
+          # Bind to clicks
+          marker.on 'click', ->
+            # Reset currently selected marker
+            if $scope.selected
+              $scope.selected.marker.setIcon $window.L.MakiMarkers.icon
+                  'size': $scope.selected.properties['marker-symbol']
+                  'icon': $scope.selected.properties['marker-symbol']
+                  'color': $scope.selected.properties['marker-color']
+            # Marker size large
+            marker.setIcon $window.L.MakiMarkers.icon
+              'size': 'large'
+              'icon': @properties['marker-symbol']
+              'color': @properties['marker-color']
+            # Set as selected
+            $scope.selected = @
+          , item # To be executed with the context of item
+
           # Keep track
-          $scope.markers.push marker
+          item.marker = marker
+          $scope.items.push item
 
     # Watch for marker changes
-    $scope.$watchCollection 'markers', (markers) ->
+    $scope.$watchCollection 'items', (items) ->
 
-      return unless markers.length
+      return unless items.length
 
       leafletData.getMap().then (map) ->
 
-        group = L.featureGroup markers
+        group = L.featureGroup items.map((i) -> i.marker)
         map.fitBounds group.getBounds(), padding: [100, 100]
         group.addTo map
