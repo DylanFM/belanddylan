@@ -1,1 +1,415 @@
-{"features":[{"geometry":{"coordinates":[151.33247494697568,-33.26046359222835],"type":"Point"},"properties":{"description":"http://www.stayz.com.au/accommodation/nsw/central-coast/central-coast-hinterland/31527","farm_stay":"true","id":"marker-i0s5qk7cq","marker-color":"#f5c272","marker-size":"small","marker-symbol":"lodging","name":"Yarramalong Valley Farm Stay","title":"Yarramalong Valley Farm Stay"},"type":"Feature"},{"geometry":{"coordinates":[151.56609535217282,-33.28405493133557],"type":"Point"},"properties":{"caravan_park":"true","description":"http://norahheadhp.com.au","id":"marker-i0s5qk7af","marker-color":"#f5c272","marker-size":"small","marker-symbol":"lodging","motel":"","name":"Norah Head Holiday Park","title":"Norah Head Holiday Park"},"type":"Feature"},{"geometry":{"coordinates":[151.5616750717163,-33.23800553600037],"type":"Point"},"properties":{"description":"http://www.hibiscuslakesidemotel.com.au","id":"marker-i0s5qk7ah","marker-color":"#f5c272","marker-size":"small","marker-symbol":"lodging","motel":"true","name":"Hibiscus Lakeside Motel","title":"Hibiscus Lakeside Motel"},"type":"Feature"},{"geometry":{"coordinates":[151.5609884262085,-33.26080450106271],"type":"Point"},"properties":{"description":"http://www.wotif.com/hotels/sea-n-sun-motel.html","id":"marker-i0s5qk7ai","marker-color":"#f5c272","marker-size":"small","marker-symbol":"lodging","motel":"true","name":"Sea n Sun Motel","title":"Sea n Sun Motel"},"type":"Feature"},{"geometry":{"coordinates":[151.51641011238098,-33.25991634105437],"type":"Point"},"properties":{"description":"http://www.bestwestern.com.au/gorokan/hotels/best-western-bridge-view-motel/","id":"marker-i0s5qk7aj","marker-color":"#f5c272","marker-size":"small","marker-symbol":"lodging","motel":"true","name":"Best Western Bridge View Motel","title":"Best Western Bridge View Motel"},"type":"Feature"},{"geometry":{"coordinates":[151.52270793914792,-33.31006977071091],"type":"Point"},"properties":{"description":"http://www.pullmanhotels.com/gb/hotel-8791-pullman-magenta-shores-resortex-quay-west-magenta-shores/index.shtml","id":"marker-i0s5qk7ak","marker-color":"#f5c272","marker-size":"small","marker-symbol":"lodging","name":"Magenta Shores Resort","resort":"true","title":"Magenta Shores Resort"},"type":"Feature"},{"geometry":{"coordinates":[151.57540798187256,-33.281714022507195],"type":"Point"},"properties":{"description":"http://www.norahheadlighthouse.com.au/accommodation/","id":"marker-i0s5qk7al","marker-color":"#f5c272","marker-size":"small","marker-symbol":"lodging","name":"Norah Head Lighthouse Cottages","something_else":"true","title":"Norah Head Lighthouse Cottages"},"type":"Feature"},{"geometry":{"coordinates":[151.44041776657104,-33.28544509651921],"type":"Point"},"properties":{"description":"http://www.mercurekooindahwaters.com.au/","id":"marker-i0s5qk7am","marker-color":"#f5c272","marker-size":"small","marker-symbol":"lodging","motel":"","name":"Mercure Kooindah Waters Central Coast","resort":"true","title":"Mercure Kooindah Waters Central Coast"},"type":"Feature"},{"geometry":{"coordinates":[151.513352394104,-33.25894742892847],"type":"Point"},"properties":{"description":"http://tuggerahlakesmotel.com.au","id":"marker-i0s5qk7cn","marker-color":"#f5c272","marker-size":"small","marker-symbol":"lodging","motel":"true","name":"Tuggerah Lakes Motel","title":"Tuggerah Lakes Motel"},"type":"Feature"},{"geometry":{"coordinates":[151.279399394989,-33.22487616140111],"type":"Point"},"properties":{"description":"http://www.yarramalongmanor.com.au/","id":"marker-i0s5qk7co","marker-color":"#f5c272","marker-size":"small","marker-symbol":"lodging","motel":"true","name":"Yarramalong Manor","resort":"","title":"Yarramalong Manor"},"type":"Feature"},{"geometry":{"coordinates":[151.33851528167725,-33.2689051800625],"type":"Point"},"properties":{"description":"http://www.yarramalongvalley.com.au/yarramalong_accommodation/misty_mountain_farm_stay.html","farm_stay":"true","id":"marker-i0s5qk7cp","marker-color":"#f5c272","marker-size":"small","marker-symbol":"lodging","name":"Misty Mountain Farm Stay","title":"Misty Mountain Farm Stay"},"type":"Feature"},{"geometry":{"coordinates":[151.56680345535278,-33.23551083729263],"type":"Point"},"properties":{"caravan_park":"true","description":"http://budgewoihp.com.au","id":"marker-i0s5qk7ag","marker-color":"#f5c272","marker-size":"small","marker-symbol":"lodging","name":"Budgewoi Holiday Park","title":"Budgewoi Holiday Park"},"type":"Feature"},{"geometry":{"coordinates":[151.3644576072693,-33.27553408033792],"type":"Point"},"properties":{"description":"http://escalaluxurysuites.com.au","id":"marker-i0s5qk7cr","marker-color":"#f5c272","marker-size":"small","marker-symbol":"lodging","motel":"","name":"Escala Luxury Suites","something_else":"true","title":"Escala Luxury Suites"},"type":"Feature"},{"geometry":{"coordinates":[151.3898527622223,-33.27136304482269],"type":"Point"},"properties":{"description":"http://www.amazement.com.au/info.php?id=17","farm_stay":"true","id":"marker-i0s5qk7cs","marker-color":"#f5c272","marker-size":"small","marker-symbol":"lodging","name":"Amazement Farm & Fun Park Farm Stay","title":"Amazement Farm & Fun Park Farm Stay"},"type":"Feature"},{"geometry":{"coordinates":[151.565043926239,-33.241038563007024],"type":"Point"},"properties":{"bus":true,"description":"Slade Park","id":"marker-i0s5ututt","marker-color":"#3ca0d3","marker-size":"small","marker-symbol":"bus","name":"Slade Park","title":"Slade Park","train":""},"type":"Feature"},{"geometry":{"coordinates":[151.56651377677917,-33.280485244470604],"type":"Point"},"properties":{"bus":true,"description":"Norah Head Sports Ground","id":"marker-i0s5utuuu","marker-color":"#3ca0d3","marker-size":"small","marker-symbol":"bus","name":"Norah Head Sports Ground","title":"Norah Head Sports Ground","train":""},"type":"Feature"},{"geometry":{"coordinates":[151.4488935470581,-33.24742731701618],"type":"Point"},"properties":{"bus":true,"description":"Warnervale Train Station","id":"marker-i0s5utuuv","marker-color":"#3ca0d3","marker-size":"small","marker-symbol":"rail","name":"Warnervale Train Station","title":"Warnervale Train Station","train":true},"type":"Feature"},{"geometry":{"coordinates":[151.40100002288816,-33.30635768291665],"type":"Point"},"properties":{"bus":"","description":"M1 Wyong Road exit","driving_poi":"true","id":"marker-i0s5utuux","marker-color":"#6c6c6c","marker-size":"small","marker-symbol":"car","name":"M1 Wyong Road exit","title":"M1 Wyong Road exit","train":""},"type":"Feature"},{"geometry":{"coordinates":[151.35488748550415,-33.188968973366144],"type":"Point"},"properties":{"bus":"true","description":"Dooralong Hall","driving_poi":"true","id":"marker-i0s5utuvy","marker-color":"#f86767","marker-size":"large","marker-symbol":"heart","name":"Dooralong Hall","title":"Dooralong Hall","train":"","venue":"true"},"type":"Feature"},{"geometry":{"coordinates":[151.3976365327835,-33.27440388394382],"type":"Point"},"properties":{"description":"Yarramalong Road intersection","driving_poi":"true","id":"marker-i0s5utuvz","marker-color":"#6c6c6c","marker-size":"small","marker-symbol":"car","name":"Yarramalong Road intersection","title":"Yarramalong Road intersection"},"type":"Feature"},{"geometry":{"coordinates":[151.40479803085327,-33.276013960889856],"type":"Point"},"properties":{"description":"Hue Hue Road turn","driving_poi":"true","id":"marker-i0s5utuv10","marker-color":"#6c6c6c","marker-size":"small","marker-symbol":"car","name":"Hue Hue Road turn","title":"Hue Hue Road turn"},"type":"Feature"},{"geometry":{"coordinates":[151.3990044593811,-33.262159151967836],"type":"Point"},"properties":{"description":"Jilliby Road turn","driving_poi":"true","id":"marker-i0s5utuv11","marker-color":"#6c6c6c","marker-size":"small","marker-symbol":"car","name":"Jilliby Road turn","title":"Jilliby Road turn"},"type":"Feature"}],"id":"fires.jlh1kf2i","type":"FeatureCollection"}
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          151.33247494697568,
+          -33.26046359222835
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "farm_stay": "true",
+        "marker-color": "#f5c272",
+        "marker-symbol": "lodging",
+        "name": "Yarramalong Valley Farm Stay",
+        "url": "http://www.stayz.com.au/accommodation/nsw/central-coast/central-coast-hinterland/31527",
+        "type": "accom"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.56609535217282,
+          -33.28405493133557
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "caravan_park": "true",
+        "marker-color": "#f5c272",
+        "marker-symbol": "lodging",
+        "motel": "",
+        "name": "Norah Head Holiday Park",
+        "url": "http://norahheadhp.com.au",
+        "type": "accom"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.5616750717163,
+          -33.23800553600037
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "marker-color": "#f5c272",
+        "marker-symbol": "lodging",
+        "motel": "true",
+        "name": "Hibiscus Lakeside Motel",
+        "url": "http://www.hibiscuslakesidemotel.com.au",
+        "farm_stay": "",
+        "type": "accom"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.5609884262085,
+          -33.26080450106271
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "marker-color": "#f5c272",
+        "marker-symbol": "lodging",
+        "motel": "true",
+        "name": "Sea n Sun Motel",
+        "url": "http://www.wotif.com/hotels/sea-n-sun-motel.html",
+        "type": "accom"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.51641011238098,
+          -33.25991634105437
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "marker-color": "#f5c272",
+        "marker-symbol": "lodging",
+        "motel": "true",
+        "name": "Best Western Bridge View Motel",
+        "url": "http://www.bestwestern.com.au/gorokan/hotels/best-western-bridge-view-motel/",
+        "type": "accom"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.52270793914792,
+          -33.31006977071091
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "marker-color": "#f5c272",
+        "marker-symbol": "lodging",
+        "name": "Magenta Shores Resort",
+        "resort": "true",
+        "url": "http://www.pullmanhotels.com/gb/hotel-8791-pullman-magenta-shores-resortex-quay-west-magenta-shores/index.shtml",
+        "type": "accom"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.57540798187256,
+          -33.281714022507195
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "marker-color": "#f5c272",
+        "marker-symbol": "lodging",
+        "name": "Norah Head Lighthouse Cottages",
+        "something_else": "true",
+        "url": "http://www.norahheadlighthouse.com.au/accommodation/",
+        "type": "accom"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.44041776657104,
+          -33.28544509651921
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "marker-color": "#f5c272",
+        "marker-symbol": "lodging",
+        "motel": "",
+        "name": "Mercure Kooindah Waters Central Coast",
+        "resort": "true",
+        "url": "http://www.mercurekooindahwaters.com.au/",
+        "type": "accom"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.513352394104,
+          -33.25894742892847
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "marker-color": "#f5c272",
+        "marker-symbol": "lodging",
+        "motel": "true",
+        "name": "Tuggerah Lakes Motel",
+        "url": "http://tuggerahlakesmotel.com.au",
+        "type": "accom"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.279399394989,
+          -33.22487616140111
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "marker-color": "#f5c272",
+        "marker-symbol": "lodging",
+        "motel": "true",
+        "name": "Yarramalong Manor",
+        "resort": "",
+        "url": "http://www.yarramalongmanor.com.au/",
+        "type": "accom"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.33851528167725,
+          -33.2689051800625
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "farm_stay": "true",
+        "marker-color": "#f5c272",
+        "marker-symbol": "lodging",
+        "name": "Misty Mountain Farm Stay",
+        "url": "http://www.yarramalongvalley.com.au/yarramalong_accommodation/misty_mountain_farm_stay.html",
+        "type": "accom"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.56680345535278,
+          -33.23551083729263
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "caravan_park": "true",
+        "marker-color": "#f5c272",
+        "marker-symbol": "lodging",
+        "name": "Budgewoi Holiday Park",
+        "url": "http://budgewoihp.com.au",
+        "type": "accom"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.3644576072693,
+          -33.27553408033792
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "marker-color": "#f5c272",
+        "marker-symbol": "lodging",
+        "motel": "",
+        "name": "Escala Luxury Suites",
+        "something_else": "true",
+        "url": "http://escalaluxurysuites.com.au",
+        "type": "accom"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.3898527622223,
+          -33.27136304482269
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "farm_stay": "true",
+        "marker-color": "#f5c272",
+        "marker-symbol": "lodging",
+        "name": "Amazement Farm & Fun Park Farm Stay",
+        "url": "http://www.amazement.com.au/info.php?id=17",
+        "type": "accom"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.565043926239,
+          -33.241038563007024
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "bus": true,
+        "marker-color": "#3ca0d3",
+        "marker-symbol": "bus",
+        "name": "Slade Park",
+        "train": "",
+        "url": "",
+        "type": "bus"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.56651377677917,
+          -33.280485244470604
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "bus": true,
+        "marker-color": "#3ca0d3",
+        "marker-symbol": "bus",
+        "name": "Norah Head Sports Ground",
+        "train": "",
+        "url": "",
+        "type": "bus"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.4488935470581,
+          -33.24742731701618
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "bus": true,
+        "marker-color": "#3ca0d3",
+        "marker-symbol": "rail",
+        "name": "Warnervale Train Station",
+        "train": true,
+        "url": "",
+        "type": "bus"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.40100002288816,
+          -33.30635768291665
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "bus": "",
+        "driving_poi": "true",
+        "marker-color": "#6c6c6c",
+        "marker-symbol": "car",
+        "name": "M1 Wyong Road exit",
+        "train": "",
+        "url": "",
+        "type": "car"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.35488748550415,
+          -33.188968973366144
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "bus": "true",
+        "driving_poi": "true",
+        "marker-color": "#f86767",
+        "marker-symbol": "heart",
+        "name": "Dooralong Hall",
+        "train": "",
+        "venue": "true",
+        "url": "",
+        "type": "venue"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.3976365327835,
+          -33.27440388394382
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "driving_poi": "true",
+        "marker-color": "#6c6c6c",
+        "marker-symbol": "car",
+        "name": "Yarramalong Road intersection",
+        "url": "",
+        "type": "car"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.40479803085327,
+          -33.276013960889856
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "driving_poi": "true",
+        "marker-color": "#6c6c6c",
+        "marker-symbol": "car",
+        "name": "Hue Hue Road turn",
+        "url": "",
+        "type": "car"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          151.3990044593811,
+          -33.262159151967836
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "driving_poi": "true",
+        "marker-color": "#6c6c6c",
+        "marker-symbol": "car",
+        "name": "Jilliby Road turn",
+        "url": "",
+        "type": "car"
+      },
+      "type": "Feature"
+    }
+  ],
+  "id": "fires.jlh1kf2i",
+  "type": "FeatureCollection"
+}
