@@ -1,4 +1,26 @@
-<div class="selectedItem" ng-if="selected">
+<div class="selectedItem" ng-if="selected" class="type-{{selected.properties.type}}">
   <h3>{{selected.properties.type | itemType}}</h3>
   <h2>{{selected.properties.name}}</h2>
+
+  <ul>
+    <li ng-if="selected.properties.url">
+      <a href="{{selected.properties.url}}" title="Visit the website">Visit website</a>
+    </li>
+    <li ng-if="selected.properties.bus">
+      Bus stops here
+    </li>
+    <li ng-if="selected.properties.train">
+      Train stops here
+    </li>
+    <li ng-if="selected.properties.driving_poi">
+      Important for drivers
+    </li>
+    <li ng-if="selected.properties.type === 'accom'">
+      <span ng-if="selected.properties.farm_stay">Farm stay</span>
+      <span ng-if="selected.properties.caravan_park">Caravan park</span>
+      <span ng-if="selected.properties.motel">Motel</span>
+      <span ng-if="selected.properties.resort">Resort</span>
+      <span ng-if="selected.properties.something_else">Something else</span>
+    </li>
+  </ul>
 </div>
