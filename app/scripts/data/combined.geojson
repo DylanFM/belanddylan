@@ -272,7 +272,9 @@
         "name": "Slade Park",
         "train": "",
         "url": "",
-        "type": "bus"
+        "type": "trans",
+        "caravan_park": "",
+        "motel": ""
       },
       "type": "Feature"
     },
@@ -291,7 +293,7 @@
         "name": "Norah Head Sports Ground",
         "train": "",
         "url": "",
-        "type": "bus"
+        "type": "trans"
       },
       "type": "Feature"
     },
@@ -310,7 +312,7 @@
         "name": "Warnervale Train Station",
         "train": true,
         "url": "",
-        "type": "bus"
+        "type": "trans"
       },
       "type": "Feature"
     },
@@ -330,7 +332,7 @@
         "name": "M1 Wyong Road exit",
         "train": "",
         "url": "",
-        "type": "car"
+        "type": "trans"
       },
       "type": "Feature"
     },
@@ -369,7 +371,7 @@
         "marker-symbol": "car",
         "name": "Yarramalong Road intersection",
         "url": "",
-        "type": "car"
+        "type": "trans"
       },
       "type": "Feature"
     },
@@ -387,7 +389,7 @@
         "marker-symbol": "car",
         "name": "Hue Hue Road turn",
         "url": "",
-        "type": "car"
+        "type": "trans"
       },
       "type": "Feature"
     },
@@ -405,7 +407,7 @@
         "marker-symbol": "car",
         "name": "Jilliby Road turn",
         "url": "",
-        "type": "car"
+        "type": "trans"
       },
       "type": "Feature"
     }
