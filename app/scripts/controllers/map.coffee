@@ -40,31 +40,41 @@ angular.module('belanddylanApp')
           marker = $window.L.marker latLng,
             title: item.properties.name
             alt: item.properties.name
+            riseOnHover: yes
             icon: $window.L.MakiMarkers.icon
-              'size': item.properties['marker-size']
+              'size': 's'
               'icon': item.properties['marker-symbol']
               'color': item.properties['marker-color']
 
           # Bind to clicks
           marker.on 'click', ->
-            # Reset currently selected marker
-            if $scope.selected
-              $scope.selected.marker.setIcon $window.L.MakiMarkers.icon
-                  'size': $scope.selected.properties['marker-symbol']
-                  'icon': $scope.selected.properties['marker-symbol']
-                  'color': $scope.selected.properties['marker-color']
-            # Marker size large
-            marker.setIcon $window.L.MakiMarkers.icon
-              'size': 'large'
-              'icon': @properties['marker-symbol']
-              'color': @properties['marker-color']
-            # Set as selected
             $scope.selected = @
           , item # To be executed with the context of item
 
           # Keep track
           item.marker = marker
+          item.zIndex = marker._zIndex
           $scope.items.push item
+
+    # Watch for selected changes
+    $scope.$watch 'selected', (newSelection, oldSelection) ->
+      # Reset currently selected marker
+      if oldSelection
+        oldSelection.marker.setIcon $window.L.MakiMarkers.icon
+            'size': 's'
+            'icon': oldSelection.properties['marker-symbol']
+            'color': oldSelection.properties['marker-color']
+        # Reset zIndex
+        oldSelection.marker.setZIndexOffset oldSelection.zIndex
+
+      return unless newSelection
+      # Marker size large
+      newSelection.marker.setIcon $window.L.MakiMarkers.icon
+        'size': 'l'
+        'icon': newSelection.properties['marker-symbol']
+        'color': newSelection.properties['marker-color']
+      # On top
+      newSelection.marker.setZIndexOffset 1000
 
     # Watch for marker changes
     $scope.$watchCollection 'items', (items) ->
