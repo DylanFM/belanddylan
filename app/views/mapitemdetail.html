@@ -7,20 +7,46 @@
       <a href="{{selected.properties.url}}" title="Visit the website">Visit website</a>
     </li>
     <li ng-if="selected.properties.bus">
-      Bus stops here
+      <maki-icon type="bus">
+        Bus stops here
+      </maki-icon>
     </li>
     <li ng-if="selected.properties.train">
-      Train stops here
+      <maki-icon type="rail">
+        Train stops here
+      </maki-icon>
     </li>
     <li ng-if="selected.properties.driving_poi">
-      Important for drivers
+      <maki-icon type="car">
+        Important for drivers
+      </maki-icon>
     </li>
     <li ng-if="selected.properties.type === 'accom'">
-      <span ng-if="selected.properties.farm_stay">Farm stay</span>
-      <span ng-if="selected.properties.caravan_park">Caravan park</span>
-      <span ng-if="selected.properties.motel">Motel</span>
-      <span ng-if="selected.properties.resort">Resort</span>
-      <span ng-if="selected.properties.something_else">Something else</span>
+      <span ng-if="selected.properties.farm_stay">
+        <maki-icon type="farm">
+          Farm stay
+        </maki-icon>
+      </span>
+      <span ng-if="selected.properties.caravan_park">
+        <maki-icon type="playground">
+          Caravan park
+        </maki-icon>
+      </span>
+      <span ng-if="selected.properties.motel">
+        <maki-icon type="commercial">
+          Motel
+        </maki-icon>
+      </span>
+      <span ng-if="selected.properties.resort">
+        <maki-icon type="swimming">
+          Resort
+        </maki-icon>
+      </span>
+      <span ng-if="selected.properties.something_else">
+        <maki-icon type="lodging">
+          Something else
+        </maki-icon>
+      </span>
     </li>
   </ul>
 </div>
