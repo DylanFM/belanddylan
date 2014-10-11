@@ -9,4 +9,5 @@
 angular.module('belanddylanApp')
   .directive 'mapItemDetail', ->
     templateUrl: '/views/mapitemdetail.html'
-    restrict: 'E'
+    link: (scope, element, attrs) ->
+      element.addClass 'mapItemDetail'

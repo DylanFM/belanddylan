@@ -42,7 +42,7 @@ angular.module('belanddylanApp')
             alt: item.properties.name
             riseOnHover: yes
             icon: $window.L.MakiMarkers.icon
-              'size': 's'
+              'size': 'm'
               'icon': item.properties['marker-symbol']
               'color': item.properties['marker-color']
 
@@ -56,12 +56,27 @@ angular.module('belanddylanApp')
           item.zIndex = marker._zIndex
           $scope.items.push item
 
+    # Watch for marker changes
+    $scope.$watchCollection 'items', (items) ->
+
+      return unless items.length
+
+      leafletData.getMap().then (map) ->
+
+        group = L.featureGroup items.map((i) -> i.marker)
+        group.addTo map
+        map.fitBounds group.getBounds()
+
+        # Pre-select the venue
+        unless $scope.selected
+          $scope.selected = items.filter((i) -> i.properties.type is 'venue')[0]
+
     # Watch for selected changes
     $scope.$watch 'selected', (newSelection, oldSelection) ->
       # Reset currently selected marker
       if oldSelection
         oldSelection.marker.setIcon $window.L.MakiMarkers.icon
-            'size': 's'
+            'size': 'm'
             'icon': oldSelection.properties['marker-symbol']
             'color': oldSelection.properties['marker-color']
         # Reset zIndex
@@ -75,18 +90,3 @@ angular.module('belanddylanApp')
         'color': newSelection.properties['marker-color']
       # On top
       newSelection.marker.setZIndexOffset 1000
-
-    # Watch for marker changes
-    $scope.$watchCollection 'items', (items) ->
-
-      return unless items.length
-
-      leafletData.getMap().then (map) ->
-
-        group = L.featureGroup items.map((i) -> i.marker)
-        map.fitBounds group.getBounds(), padding: [100, 100]
-        group.addTo map
-
-        # Pre-select the venue
-        unless $scope.selected
-          $scope.selected = items.filter((i) -> i.properties.type is 'venue')[0]
