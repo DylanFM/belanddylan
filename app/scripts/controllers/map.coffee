@@ -86,3 +86,7 @@ angular.module('belanddylanApp')
         group = L.featureGroup items.map((i) -> i.marker)
         map.fitBounds group.getBounds(), padding: [100, 100]
         group.addTo map
+
+        # Pre-select the venue
+        unless $scope.selected
+          $scope.selected = items.filter((i) -> i.properties.type is 'venue')[0]
