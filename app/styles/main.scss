@@ -65,3 +65,13 @@ ol {
     margin: 0;
   }
 }
+
+// Guests page detail items
+article {
+  float: left;
+  width: 50%;
+
+  &:nth-child(odd) {
+    clear: left;
+  }
+}
