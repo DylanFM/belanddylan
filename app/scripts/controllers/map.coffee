@@ -8,8 +8,12 @@
  # Controller of the belanddylanApp
 ###
 angular.module('belanddylanApp')
-  .controller 'MapCtrl', ($scope, Auth, $http, leafletData, $window) ->
+  .controller 'MapCtrl', ($scope, Auth, $routeParams, $http, leafletData, $window) ->
     Auth.ensure()
+
+    $scope.page = $routeParams.page
+    $scope.$watch 'page', (newPage) ->
+      $scope.pageUrl = "/views/partials/#{newPage}.html"
 
     angular.extend $scope,
       defaults:
