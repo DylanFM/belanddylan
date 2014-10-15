@@ -18,6 +18,14 @@
       window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
       window.analytics.load('9a7l3ke8nx');
       window.analytics.page();
+
+      (function(d) {
+        var config = {
+          kitId: 'ktf1lpu',
+          scriptTimeout: 3000
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
     </script>
   </head>
   <body ng-app="belanddylanApp">
@@ -26,10 +34,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
-      <h1>Bel and Dylan</h1>
-
-      <div ng-view=""></div>
+    <div class="container" ng-view="">
     </div>
 
     <!-- build:js(.) scripts/oldieshim.js -->
@@ -50,6 +55,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-uuid4/angular-uuid4.js"></script>
     <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
     <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
     <script src="bower_components/Leaflet.MakiMarkers/Leaflet.MakiMarkers.js"></script>
     <!-- endbower -->
