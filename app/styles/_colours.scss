@@ -8,6 +8,11 @@ $heading: $base-dark;
 $logo: darken($base-dark, 20%);
 $logo-alt: $base-dark;
 
+$link: lighten($base-dark, 10%);
+$link-visited: darken($link, 10%);
+$link-active: lighten($link, 10%);
+$link-focus: darken($link, 5%);
+
 // Form colours
 $control-border: darken($base-light, 20%);
 $control-background: darken($base-light, 10%);

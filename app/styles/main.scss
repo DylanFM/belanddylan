@@ -3,12 +3,16 @@
 
 @import "fonts";
 @import "colours";
-@import "components/copy_item";
+
 @import "components/forms";
 @import "components/header";
 @import "components/map";
+@import "components/nav";
 @import "components/prompt";
 @import "components/rsvp";
+
+@import "components/copy_item";
+@import "components/essentials";
 
 .browsehappy {
   margin: 0.2em 0;
@@ -39,10 +43,24 @@ p {
   line-height: 1.5em;
 }
 
+a {
+  &:link {
+    color: $link;
+  }
+  &:visited {
+    color: $link-visited;
+  }
+  &:active {
+    color: $link-active;
+  }
+  &:hover, &:focus {
+    color: $link-focus;
+  }
+}
+
 .container {
   margin: 1.5em auto 0;
   font-size: 150%;
   min-width: 300px;
   max-width: 80%;
-  text-align: center;
 }
