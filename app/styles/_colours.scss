@@ -1,0 +1,17 @@
+$base-dark: #333;
+$base-light: #eee;
+
+$body-background: $base-light;
+$base-type: $base-dark;
+$heading: $base-dark;
+
+$logo: darken($base-dark, 20%);
+$logo-alt: $base-dark;
+
+// Form colours
+$control-border: darken($base-light, 20%);
+$control-background: darken($base-light, 10%);
+$control-colour: $base-type;
+$button-border: $control-border;
+$button-background: $control-background;
+$button-colour: $base-type;

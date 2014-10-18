@@ -1,0 +1,16 @@
+input {
+  background: $control-background;
+  border: 1px solid $control-border;
+  color: $control-colour;
+}
+button {
+  background: $button-background;
+  border: 1px solid $button-border;
+  color: $button-colour;
+}
+input, button {
+  font-family: $font-family;
+  font-size: inherit;
+  padding: .3em .5em;
+  border-radius: .2em;
+}

@@ -1,0 +1,14 @@
+header h1 {
+  margin: 0;
+}
+svg {
+  width: 45%;
+  max-width: 240px;
+
+  .bel, .dylan {
+    fill: $logo-alt;
+  }
+  .and {
+    fill: $logo;
+  }
+}

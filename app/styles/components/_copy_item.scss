@@ -1,0 +1,8 @@
+article {
+  float: left;
+  width: 50%;
+
+  &:nth-child(odd) {
+    clear: left;
+  }
+}
