@@ -6,14 +6,16 @@
       border-bottom: none;
     }
   }
-  h3, p {
-    display: inline-block;
-  }
-  h3 {
-    width: 10%;
-    font-weight: normal;
-  }
   .important h3 {
     font-weight: 700;
+  }
+  @include mq($from: tablet) {
+    h3, p {
+      display: inline-block;
+    }
+    h3 {
+      width: 14%;
+      font-weight: normal;
+    }
   }
 }

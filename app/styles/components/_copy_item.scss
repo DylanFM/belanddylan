@@ -1,11 +1,13 @@
 .copyItem {
-  float: left;
-  width: 50%;
-  box-sizing: border-box;
-  padding: 0 .75em;
+  @include mq($from: tablet) {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0 .75em;
 
-  // Even because we begin with a header or .essentials
-  &:nth-child(even) {
-    clear: left;
+    // Even because we begin with a header or .essentials
+    &:nth-child(even) {
+      clear: left;
+    }
   }
 }

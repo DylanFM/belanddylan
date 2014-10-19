@@ -5,9 +5,12 @@ h1 {
   margin: 0;
 }
 svg {
-  width: 45%;
-  max-width: 240px;
+  width: 60%;
 
+  @include mq($from: mobile) {
+    width: 45%;
+    max-width: 240px;
+  }
   .bel, .dylan {
     fill: $logo-alt;
   }

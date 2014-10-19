@@ -1,16 +1,7 @@
-.angular-leaflet-map, .mapItemDetail {
-  height: 400px;
-  float: left;
-}
-.angular-leaflet-map {
-  width: 65%;
-}
 .map {
-  @include clearfix;
   margin-bottom: 1.5em;
 }
 .mapItemDetail {
-  width: 35%;
   box-sizing: border-box;
   padding: 0 .75em;
 
@@ -18,5 +9,30 @@
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+}
+@include mq($until: mobileLandscape) {
+  .angular-leaflet-map {
+    height: 60vh;
+  }
+  .mapItemDetail {
+    height: 40vh;
+  }
+}
+@include mq($from: mobileLandscape) {
+  .angular-leaflet-map {
+    height: 100vh;
+  }
+}
+@include mq($from: tablet) {
+  .angular-leaflet-map, .mapItemDetail {
+    height: 400px;
+    float: left;
+  }
+  .angular-leaflet-map {
+    width: 65%;
+  }
+  .mapItemDetail {
+    width: 35%;
   }
 }
