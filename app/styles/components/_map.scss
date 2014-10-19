@@ -5,6 +5,10 @@
 .angular-leaflet-map {
   width: 65%;
 }
+.map {
+  @include clearfix;
+  margin-bottom: 1.5em;
+}
 .mapItemDetail {
   width: 35%;
   box-sizing: border-box;
