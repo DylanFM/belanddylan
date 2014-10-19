@@ -32,9 +32,6 @@ angular
       .when '/map',
         templateUrl: 'views/map.html'
         controller: 'MapCtrl'
-      .when '/map/:page',
-        templateUrl: 'views/map.html'
-        controller: 'MapCtrl'
       .otherwise
         redirectTo: '/'
     # $locationProvider.html5Mode(true)

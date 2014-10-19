@@ -10,7 +10,6 @@
 @import "components/nav";
 @import "components/prompt";
 @import "components/rsvp";
-
 @import "components/copy_item";
 @import "components/essentials";
 
@@ -63,4 +62,8 @@ a {
   font-size: 150%;
   min-width: 300px;
   max-width: 80%;
+}
+
+section {
+  clear: left;
 }

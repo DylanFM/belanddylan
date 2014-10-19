@@ -3,7 +3,7 @@ input {
   border: 1px solid $control-border;
   color: $control-colour;
 }
-button {
+button, input[type="submit"] {
   background: $button-background;
   border: 1px solid $button-border;
   color: $button-colour;

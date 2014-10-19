@@ -1,8 +1,9 @@
-article {
+.copyItem {
   float: left;
   width: 50%;
 
-  &:nth-child(odd) {
+  // Even because we begin with a header or .essentials
+  &:nth-child(even) {
     clear: left;
   }
 }

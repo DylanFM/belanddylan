@@ -2,6 +2,22 @@
 
 <a href="/#/rsvp" title="RSVP" class="cmon-rsvp">RSVP</a>
 
-<section ng-include="'/views/partials/essentials.html'"></section>
+<section>
+  <article ng-include="'/views/partials/essentials.html'"></article>
 
-<section ng-include="'/views/partials/guests.html'"></section>
+  <article copy-item="dress"></article>
+  <article copy-item="gifts"></article>
+</section>
+
+<section class="transport">
+  <header>
+    <h2>Transport</h2>
+  </header>
+
+  <article copy-item="transport"></article>
+  <article copy-item="bus"></article>
+  <article copy-item="driving"></article>
+  <article copy-item="parking"></article>
+  <article copy-item="taxis"></article>
+  <article copy-item="trains"></article>
+</section>
