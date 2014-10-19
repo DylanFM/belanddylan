@@ -29,9 +29,6 @@ angular
       .when '/rsvp',
         templateUrl: 'views/rsvp.html'
         controller: 'RsvpCtrl'
-      .when '/map',
-        templateUrl: 'views/map.html'
-        controller: 'MapCtrl'
       .otherwise
         redirectTo: '/'
     # $locationProvider.html5Mode(true)
