@@ -1,31 +1,33 @@
 <header ng-include="'/views/partials/header.html'"></header>
-<nav ng-include="'/views/partials/nav.html'"></nav>
 
-<ol>
-  <li id="step-start">
-    <p>First of all, what's your name?</p>
-    <input type="text" ng-model="name" enter-submit="setStep('rsvp')" placeholder="Your name" required />
-    <br />
-    <button ng-show="name.length" ng-click="setStep('rsvp')">That's me!</button>
-  </li>
-  <li ng-show="step != 'start'" id="step-rsvp">
-    <p>Hey! So, think you can make it on the big day?</p>
-    <button ng-click="setStep('yay')">Sure can!</button>
-    <button ng-click="setStep('nay')">No :(</button>
-  </li>
-  <li ng-show="step == 'nay'" id="step-nay">
-    <p>Oh no! We would've loved to have seen you there.</p>
-  </li>
-  <li ng-show="step == 'yay' || step == 'done'" id="step-yay">
-    <p>Awesome!! Now, can we have your email and phone number in case we need to contact you in the lead up?</p>
-    <input type="email" ng-model="email" enter-submit="setStep('done')" placeholder="Your email" />
-    <br />
-    <input type="phone" ng-model="phone" enter-submit="setStep('done')" placeholder="Your phone number" />
-    <i>If you include your country code (e.g +61) we can SMS you from the website.</i>
-    <br />
-    <button ng-show="email.length || phone.length" ng-click="setStep('done')">There you go</button>
-  </li>
-  <li ng-show="step == 'done'" id="step-done">
-    <p>Thanks!</p>
-  </li>
-</ol>
+<section class="rsvp">
+  <header>
+    <h2>RSVP</h2>
+  </header>
+
+  <ol>
+    <li id="step-start">
+      <p>First of all, what's your name?</p>
+      <input type="text" ng-model="name" enter-submit="setStep('rsvp')" placeholder="Your name" required />
+      <button ng-show="name.length" ng-click="setStep('rsvp')">That's me!</button>
+    </li>
+    <li ng-show="step != 'start'" id="step-rsvp">
+      <p>Hey! So, think you can make it on the big day?</p>
+      <button ng-click="setStep('yay')">Sure can!</button>
+      <button ng-click="setStep('nay')">No :(</button>
+    </li>
+    <li ng-show="step == 'nay'" id="step-nay">
+      <p>Oh no! We would've loved to have seen you there.</p>
+    </li>
+    <li ng-show="step == 'yay' || step == 'done'" id="step-yay">
+      <p>Awesome!! Now, can we have your email and phone number in case we need to contact you in the lead up?</p>
+      <input type="email" ng-model="email" enter-submit="setStep('done')" placeholder="Your email" />
+      <input type="phone" ng-model="phone" enter-submit="setStep('done')" placeholder="Your phone number" />
+      <button ng-show="email.length || phone.length" ng-click="setStep('done')">There you go</button>
+    </li>
+    <li ng-show="step == 'done'" id="step-done">
+      <p>Thanks!</p>
+      <a href="/#/guests" title="Back to the main guests back">Back</a>
+    </li>
+  </ol>
+</section>

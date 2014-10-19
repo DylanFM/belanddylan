@@ -1,3 +1,25 @@
+.rsvp {
+  width: 60%;
+  min-width: 300px;
+
+  &, input {
+    text-align: center;
+  }
+  input {
+    display: block;
+    width: 40%;
+    min-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p, input {
+    margin-bottom: 1em;
+  }
+  .note {
+    font-style: italic;
+    font-size: 80%;
+  }
+}
 ol {
   list-style: none;
   padding: 0;

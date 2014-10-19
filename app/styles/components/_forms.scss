@@ -5,9 +5,13 @@ input {
 }
 button, input[type="submit"] {
   background: $button-background;
-  border: 1px solid $button-border;
   color: $button-colour;
   cursor: pointer;
+  @if $button-border {
+    border: 1px solid $button-border;
+  } @else {
+    border: none;
+  }
 }
 input, button {
   font-family: $font-family;

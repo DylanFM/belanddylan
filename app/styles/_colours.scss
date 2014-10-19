@@ -14,9 +14,9 @@ $link-active: lighten($link, 10%);
 $link-focus: darken($link, 5%);
 
 // Form colours
-$control-border: darken($base-light, 20%);
-$control-background: darken($base-light, 10%);
+$control-border: darken($base-light, 10%);
+$control-background: darken($base-light, 5%);
 $control-colour: $base-type;
-$button-border: $control-border;
-$button-background: $control-background;
+$button-border: false;
+$button-background: $control-border;
 $button-colour: $base-type;
