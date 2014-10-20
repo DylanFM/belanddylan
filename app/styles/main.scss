@@ -42,6 +42,7 @@ b, strong {
 }
 h1, h2, h3, h4, h5, h6 {
   color: $heading;
+  margin: 0 0 .75em;
 }
 h1, h2, h3 {
   font-style: italic;
@@ -49,8 +50,17 @@ h1, h2, h3 {
 h1, h2 {
   font-weight: 700;
 }
+h1 {
+  margin: 0;
+}
 p {
+  margin-top: 0;
   line-height: 1.5em;
+}
+dl, ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -71,8 +81,7 @@ a {
 section {
   @include clearfix;
   clear: left;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 1.5em auto;
   width: 90%;
 
   &.map {

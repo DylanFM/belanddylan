@@ -1,9 +1,11 @@
 .essentials {
   float: none;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 1em auto;
   text-align: center;
+
+  @include mq($from: tablet) {
+    width: 50%;
+  }
 }
 dt {
   font-style: italic;

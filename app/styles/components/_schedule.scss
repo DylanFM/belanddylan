@@ -1,21 +1,40 @@
 .schedule {
   li {
+    padding: .75em .5em;
     border-bottom: 1px solid lighten($base-dark, 30%);
 
+    &:first-child {
+      padding-top: 0;
+    }
     &:last-child {
       border-bottom: none;
+      padding-bottom: 0;
     }
   }
   .important h3 {
     font-weight: 700;
   }
+  h3, p {
+    margin: 0;
+  }
+  @include mq($until: tablet) {
+    text-align: center;
+  }
   @include mq($from: tablet) {
+    li {
+      @include clearfix;
+    }
     h3, p {
       display: inline-block;
     }
     h3 {
+      font-size: 100%;
       width: 14%;
       font-weight: normal;
+      float: left;
+    }
+    p {
+      width: 86%;
     }
   }
 }
