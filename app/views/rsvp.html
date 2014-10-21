@@ -23,6 +23,7 @@
       <p>Awesome!! Now, can we have your email and phone number in case we need to contact you in the lead up?</p>
       <input type="email" ng-model="email" enter-submit="setStep('done')" placeholder="Your email" />
       <input type="tel" ng-model="phone" enter-submit="setStep('done')" placeholder="Your phone number" />
+      <textarea ng-model="extra" placeholder="e.g dietary requirements&hellip; number of people&hellip; accommodation plans&hellip; think you'll need the bus?" rows="4"></textarea>
       <button ng-show="email.length || phone.length" ng-click="setStep('done')">There you go</button>
     </li>
     <li ng-show="step == 'done'" id="step-done">

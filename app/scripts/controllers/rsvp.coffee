@@ -30,9 +30,10 @@ angular.module('belanddylanApp')
         details.attending = 'no'
       # If it's at the last step
       if step is 'done'
-        # We have email and phone
-        details.email =  $scope.email
-        details.phone =  $scope.phone
+        # We have email, phone and extra details
+        details.email = $scope.email
+        details.phone = $scope.phone
+        details.extra = $scope.extra
       # And do it...
       # NOTE we're just resetting the traits over and over
       #      This is a symptom of my lack of understanding
