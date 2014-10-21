@@ -6,6 +6,7 @@ h1 {
 }
 svg {
   width: 60%;
+  height: auto;
 
   @include mq($from: mobile) {
     width: 45%;
