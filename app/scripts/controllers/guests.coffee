@@ -8,7 +8,7 @@
  # Controller of the belanddylanApp
 ###
 angular.module('belanddylanApp')
-  .controller 'GuestsCtrl', ($scope, Auth, $routeParams, $http, leafletData, $window) ->
+  .controller 'GuestsCtrl', ($scope, Auth, $routeParams, $http, leafletData, $window, Analytics) ->
     Auth.ensure()
 
     angular.extend $scope,

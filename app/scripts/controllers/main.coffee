@@ -8,6 +8,6 @@
  # Controller of the belanddylanApp
 ###
 angular.module('belanddylanApp')
-  .controller 'MainCtrl', ($scope, Auth) ->
+  .controller 'MainCtrl', ($scope, Auth, Analytics) ->
 
     $scope.checkAuth = -> Auth.check($scope.password)

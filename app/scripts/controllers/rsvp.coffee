@@ -8,7 +8,7 @@
  # Controller of the belanddylanApp
 ###
 angular.module('belanddylanApp')
-  .controller 'RsvpCtrl', ($scope, $window, $cookieStore, Auth) ->
+  .controller 'RsvpCtrl', ($scope, $window, $cookieStore, Auth, Analytics) ->
     Auth.ensure()
 
     $scope.setStep = (step) ->
