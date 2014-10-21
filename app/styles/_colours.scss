@@ -1,11 +1,11 @@
-$base-dark: #333;
+$base-dark: #1e3c59;
 $base-light: #fff;
 
 $body-background: $base-light;
 $base-type: $base-dark;
 $heading: $base-dark;
 
-$logo: darken($base-dark, 20%);
+$logo: lighten($base-dark, 12%);
 $logo-alt: $base-dark;
 
 $link: lighten($base-dark, 10%);
