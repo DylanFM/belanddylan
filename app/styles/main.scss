@@ -13,7 +13,6 @@
 @import "components/nav";
 @import "components/prompt";
 @import "components/rsvp";
-@import "components/copy_item";
 @import "components/essentials";
 @import "components/schedule";
 
@@ -79,13 +78,17 @@ a {
 }
 
 section {
-  @include clearfix;
-  clear: left;
   margin: 0 auto 1.5em auto;
   width: 90%;
 
   &.map {
     max-width: 100%;
     min-width: 100%;
+  }
+
+  @include mq($from: tablet) {
+    article { // Contains a number of items
+      column-count: 2;
+    }
   }
 }

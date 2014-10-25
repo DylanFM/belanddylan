@@ -5,10 +5,12 @@
 </div>
 
 <section>
-  <article class="essentials" ng-include="'/views/partials/essentials.html'"></article>
+  <div class="essentials" ng-include="'/views/partials/essentials.html'"></div>
 
-  <article copy-item="dress"></article>
-  <article copy-item="gifts"></article>
+  <article>
+    <div copy-item="dress"></div>
+    <div copy-item="gifts"></div>
+  </article>
 </section>
 
 <section class="map" ng-include="'/views/partials/map.html'"></section>
