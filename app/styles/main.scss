@@ -89,6 +89,14 @@ section {
   @include mq($from: tablet) {
     article { // Contains a number of items
       column-count: 2;
+      column-gap: 1.75em;
+    }
+    p {
+      text-align: justify;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      hyphens: auto;
+      widows: 4;
     }
   }
 }
