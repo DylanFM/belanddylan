@@ -11,9 +11,10 @@
     width: 100%;
   }
   h2 {
-    top: 15%;
+    line-height: 0;
+    top: 50%;
     color: #fff;
-    font-size: 3em;
+    font-size: 2em;
     margin: 0;
     z-index: 2;
   }
@@ -54,7 +55,7 @@ a.banner {
     }
   }
 }
-.essentials, .schedule, .rsvp, .map, .transport {
+.tidbits, .essentials, .schedule, .rsvp, .map, .transport {
   .banner {
     margin-bottom: 1.5em;
   }
@@ -62,5 +63,9 @@ a.banner {
 .cmon-rsvp {
   display: block;
   text-align: center;
-  margin: 0;
+  margin-bottom: 1.5em;
+
+  h2 {
+    font-size: 3em;
+  }
 }
