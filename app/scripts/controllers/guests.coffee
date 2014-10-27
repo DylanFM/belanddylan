@@ -15,6 +15,7 @@ angular.module('belanddylanApp')
       defaults:
         tileLayer: 'https://{s}.tiles.mapbox.com/v3/fires.jlh1kf2i/{z}/{x}/{y}.png'
         attributionControl: false
+        scrollWheelZoom: false
 
     $scope.items = []
 
