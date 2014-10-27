@@ -46,11 +46,6 @@ angular.module('belanddylanApp')
               'icon': item.properties['marker-symbol']
               'color': item.properties['marker-color']
 
-          # Bind to clicks
-          marker.on 'click', ->
-            $scope.selected = @
-          , item # To be executed with the context of item
-
           pu = '<div map-item-detail/>'
           marker.bindPopup pu,
             item: item
@@ -68,7 +63,7 @@ angular.module('belanddylanApp')
       item = leafletEvent.leafletEvent.popup.options.item
 
       newScope = $scope.$new()
-      newScope.item = item
+      newScope.selected = item
 
       $compile(leafletEvent.leafletEvent.popup._contentNode)(newScope)
 
@@ -82,27 +77,3 @@ angular.module('belanddylanApp')
         group = L.featureGroup items.map((i) -> i.marker)
         group.addTo map
         map.fitBounds group.getBounds()
-
-        # Pre-select the venue
-        unless $scope.selected
-          $scope.selected = items.filter((i) -> i.properties.type is 'venue')[0]
-
-    # Watch for selected changes
-    $scope.$watch 'selected', (newSelection, oldSelection) ->
-      # Reset currently selected marker
-      if oldSelection
-        oldSelection.marker.setIcon $window.L.MakiMarkers.icon
-            'size': 'm'
-            'icon': oldSelection.properties['marker-symbol']
-            'color': oldSelection.properties['marker-color']
-        # Reset zIndex
-        oldSelection.marker.setZIndexOffset oldSelection.zIndex
-
-      return unless newSelection
-      # Marker size large
-      newSelection.marker.setIcon $window.L.MakiMarkers.icon
-        'size': 'l'
-        'icon': newSelection.properties['marker-symbol']
-        'color': newSelection.properties['marker-color']
-      # On top
-      newSelection.marker.setZIndexOffset 1000
