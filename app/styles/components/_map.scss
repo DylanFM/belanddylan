@@ -1,3 +1,6 @@
+.map {
+  margin-top: 1.5em;
+}
 .mapItemDetail {
   box-sizing: border-box;
   padding: 0 .75em;
@@ -16,6 +19,9 @@
   }
 }
 @include mq($from: tablet) {
+  .map {
+    @include clearfix;
+  }
   .angular-leaflet-map, .mapItemDetail {
     height: 400px;
     float: left;

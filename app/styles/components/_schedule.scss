@@ -1,4 +1,6 @@
 .schedule {
+  margin-top: 1.5em;
+
   li {
     padding: .75em .5em;
     border-bottom: 1px solid lighten($base-dark, 30%);
@@ -21,6 +23,8 @@
     text-align: center;
   }
   @include mq($from: tablet) {
+    @include clearfix;
+
     li {
       @include clearfix;
     }

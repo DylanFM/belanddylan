@@ -1,20 +1,28 @@
 <header ng-include="'/views/partials/header.html'"></header>
 
-<div class="cmon-rsvp">
-  <a href="/#/rsvp" title="RSVP">RSVP</a>
-</div>
+<a href="/#/rsvp" title="RSVP" class="banner cmon-rsvp">
+  <h2>RSVP</h2>
+  <img src="/images/photos/sunglasssmiles.jpg">
+  <!--<img class="bg" src="/images/photos/sunglasssmiles.jpg">
+    <img class="clipped" src="/images/photos/sunglasssmiles.jpg">
+    <svg height="0" width="0">
+      <defs>
+        <clipPath id="svgTextPath">
+          <text x="300" y="130" font-family="ff-tisa-sans-web-pro" font-size="4em" font-weight="700" font-style="italic">RSVP</text>
+        </clipPath>
+      </defs>
+    </svg>
+  -->
+</a>
 
 <section>
   <div class="essentials" ng-include="'/views/partials/essentials.html'"></div>
-
-  <article>
-    <div copy-item="dress"></div>
-    <div copy-item="gifts"></div>
-  </article>
 </section>
 
 <section class="map" ng-include="'/views/partials/map.html'"></section>
 
 <section class="schedule" ng-include="'/views/partials/schedule.html'"></section>
+
+<section class="tidbits" ng-include="'/views/partials/tidbits.html'"></section>
 
 <section class="transport" ng-include="'/views/partials/transport.html'"></section>
