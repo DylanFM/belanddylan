@@ -1,35 +1,13 @@
 .map {
   margin-top: 1.5em;
 }
-.mapItemDetail {
-  box-sizing: border-box;
-  padding: 0 .75em;
-}
-@include mq($until: mobileLandscape) {
-  .angular-leaflet-map {
-    height: 60vh;
-  }
-  .mapItemDetail {
-    height: 40vh;
-  }
-}
-@include mq($from: mobileLandscape) {
+@include mq($until: tablet) {
   .angular-leaflet-map {
     height: 100vh;
   }
 }
 @include mq($from: tablet) {
-  .map {
-    @include clearfix;
-  }
-  .angular-leaflet-map, .mapItemDetail {
-    height: 400px;
-    float: left;
-  }
   .angular-leaflet-map {
-    width: 65%;
-  }
-  .mapItemDetail {
-    width: 35%;
+    height: 350px;
   }
 }

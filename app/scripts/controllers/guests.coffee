@@ -8,7 +8,7 @@
  # Controller of the belanddylanApp
 ###
 angular.module('belanddylanApp')
-  .controller 'GuestsCtrl', ($scope, Auth, $routeParams, $http, leafletData, $window, Analytics) ->
+  .controller 'GuestsCtrl', ($scope, $compile, Auth, $routeParams, $http, leafletData, $window, Analytics) ->
     Auth.ensure()
 
     angular.extend $scope,
@@ -51,10 +51,26 @@ angular.module('belanddylanApp')
             $scope.selected = @
           , item # To be executed with the context of item
 
+          pu = '<div map-item-detail/>'
+          marker.bindPopup pu,
+            item: item
+            minWidth: 320
+            closeButton: false
+            className: 'incidentPopup'
+
           # Keep track
           item.marker = marker
           item.zIndex = marker._zIndex
           $scope.items.push item
+
+    # When a popup opens
+    $scope.$on 'leafletDirectiveMap.popupopen', (event, leafletEvent) ->
+      item = leafletEvent.leafletEvent.popup.options.item
+
+      newScope = $scope.$new()
+      newScope.item = item
+
+      $compile(leafletEvent.leafletEvent.popup._contentNode)(newScope)
 
     # Watch for marker changes
     $scope.$watchCollection 'items', (items) ->
