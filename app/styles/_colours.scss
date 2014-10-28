@@ -7,31 +7,32 @@ $mid: #006e90;
 $light-cool: #92b5f1;
 $light-warm: #f67347;
 
-$body-background: lighten($mid, 10%);
+$body-background: $mid;
 
-$heading: $base-dark;
-$base-type: darken($base-dark, 2%);
+$heading: $light-cool;
+$base-type: lighten($light-cool, 12%);
 
-$banner-bg: $mid;
-$banner-type: lighten($light-cool, 8%);
-$banner-link: lighten($light-cool, 5%);
-$banner-link-active: lighten($light-cool, 8%);
-$rsvp-border: $light-cool;
+$banner-type: lighten($light-cool, 18%);
+$banner-link: lighten($base-light, 5%);
+$banner-link-active: $base-light;
+$rsvp-border: $light-warm;
+$banner-bg: $base-dark;
 
 $logo: lighten($light-cool, 5%);
 $logo-alt: $light-cool;
 
-$border: $base-dark;
+$border: $light-cool;
 
-$link: lighten($base-dark, 10%);
-$link-visited: darken($link, 10%);
+$link: lighten($light-cool, 5%);
+$link-visited: lighten($link, 3%);
 $link-active: lighten($link, 10%);
 $link-focus: darken($link, 5%);
 
 // Form colours
 $control-border: lighten($light-cool, 4%);
 $control-background: lighten($light-cool, 1%);
-$control-colour: $dark;
+$control-colour: darken($mid, 10%);
+$placeholder-colour: $mid;
 $button-border: false;
 $button-background: lighten($light-cool, 2%);
-$button-colour: $dark;
+$button-colour: darken($mid, 10%);

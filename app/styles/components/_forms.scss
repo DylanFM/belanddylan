@@ -3,6 +3,9 @@ input, textarea {
   border: 1px solid $control-border;
   color: $control-colour;
 }
+::placeholder {
+  color: $placeholder-colour;
+}
 button, input[type="submit"] {
   background: $button-background;
   color: $button-colour;
