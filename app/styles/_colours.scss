@@ -1,9 +1,14 @@
-$base-dark: #121212;
-$base-light: #fff;
+$base-dark: #133b8c;
+$base-light: #f0e2c4;
+
+$mid: #ff9f05;
+
+$light-cool: #92b5f1;
+$light-warm: #ffcc77;
 
 $body-background: $base-light;
-$base-type: $base-dark;
-$heading: $base-dark;
+$base-type: darken($base-dark, 8%);
+$heading: darken($base-dark, 2%);
 
 $logo: lighten($base-dark, 12%);
 $logo-alt: $base-dark;
@@ -14,9 +19,9 @@ $link-active: lighten($link, 10%);
 $link-focus: darken($link, 5%);
 
 // Form colours
-$control-border: darken($base-light, 10%);
-$control-background: darken($base-light, 5%);
+$control-border: darken($light-warm, 4%);
+$control-background: darken($light-warm, 1%);
 $control-colour: $base-type;
 $button-border: false;
-$button-background: $control-border;
+$button-background: darken($light-warm, 2%);
 $button-colour: $base-type;
