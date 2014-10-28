@@ -7,13 +7,21 @@ $mid: #006e90;
 $light-cool: #92b5f1;
 $light-warm: #f67347;
 
-$body-background: $base-light;
+$body-background: lighten($mid, 10%);
 
-$base-type: $dark;
-$heading: darken($base-dark, 2%);
+$heading: $base-dark;
+$base-type: darken($base-dark, 2%);
 
-$logo: lighten($base-dark, 12%);
-$logo-alt: $base-dark;
+$banner-bg: $mid;
+$banner-type: lighten($light-cool, 8%);
+$banner-link: lighten($light-cool, 5%);
+$banner-link-active: lighten($light-cool, 8%);
+$rsvp-border: $light-cool;
+
+$logo: lighten($light-cool, 5%);
+$logo-alt: $light-cool;
+
+$border: $base-dark;
 
 $link: lighten($base-dark, 10%);
 $link-visited: darken($link, 10%);
@@ -21,9 +29,9 @@ $link-active: lighten($link, 10%);
 $link-focus: darken($link, 5%);
 
 // Form colours
-$control-border: darken($light-warm, 4%);
-$control-background: darken($light-warm, 1%);
-$control-colour: $base-type;
+$control-border: lighten($light-cool, 4%);
+$control-background: lighten($light-cool, 1%);
+$control-colour: $dark;
 $button-border: false;
-$button-background: darken($light-warm, 2%);
-$button-colour: $base-type;
+$button-background: lighten($light-cool, 2%);
+$button-colour: $dark;

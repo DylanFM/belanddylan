@@ -2,7 +2,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  background: $base-dark;
+  background: $banner-bg;
   height: 150px;
 
   h2, img {
@@ -13,7 +13,7 @@
   h2 {
     line-height: 0;
     top: 50%;
-    color: $base-light;
+    color: $banner-type;
     font-size: 2em;
     margin: 0;
     z-index: 2;
@@ -47,11 +47,15 @@ a.banner {
     }
     h2 {
       text-decoration: underline;
+      color: $banner-link;
     }
   }
   &:active, &:hover, &:focus {
     img {
       opacity: .8;
+    }
+    h2 {
+      color: $banner-link-active;
     }
   }
 }
@@ -63,7 +67,10 @@ a.banner {
 .cmon-rsvp {
   display: block;
   text-align: center;
+  margin-top: 1em;
   margin-bottom: 1.5em;
+  border-top: 1px solid $rsvp-border;
+  border-bottom: 1px solid $rsvp-border;
 
   h2 {
     font-size: 3em;
