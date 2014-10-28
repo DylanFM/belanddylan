@@ -14,8 +14,13 @@
       padding-bottom: 0;
     }
   }
-  .important h3 {
-    font-weight: 700;
+  .important {
+    background: $highlight-bg;
+    color: $highlight-text;
+
+    h3 {
+      color: $highlight-text;
+    }
   }
   h3, p {
     margin: 0;

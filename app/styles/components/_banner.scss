@@ -4,6 +4,9 @@
   overflow: hidden;
   background: $banner-bg;
   height: 150px;
+  border-top: 1px solid $banner-border;
+  border-bottom: 1px solid $banner-border;
+  margin-bottom: 2.5em;
 
   h2, img {
     position: absolute;
@@ -12,16 +15,17 @@
   }
   h2 {
     line-height: 0;
-    top: 50%;
+    top: 52%;
     color: $banner-type;
-    font-size: 2em;
+    font-size: 2.75em;
     margin: 0;
     z-index: 2;
   }
   img {
     top: 0;
     height: auto;
-    opacity: .6;
+    opacity: .65;
+    transition: opacity 1s ease-in-out;
   }
 
   // SVG clip possibilities
@@ -42,9 +46,6 @@
 }
 a.banner {
   &:link, &:visited {
-    img {
-      opacity: .4;
-    }
     h2 {
       text-decoration: underline;
       color: $banner-link;
@@ -52,23 +53,20 @@ a.banner {
   }
   &:active, &:hover, &:focus {
     img {
-      opacity: .8;
+      opacity: .9;
     }
     h2 {
       color: $banner-link-active;
     }
   }
 }
-.tidbits, .essentials, .schedule, .rsvp, .transport {
-  .banner {
-    margin-bottom: 2.5em;
-  }
+.map .banner {
+  margin-bottom: 0;
 }
 .cmon-rsvp {
   display: block;
   text-align: center;
   margin-top: 1em;
-  margin-bottom: 2.5em;
   border-top: 1px solid $rsvp-border;
   border-bottom: 1px solid $rsvp-border;
 

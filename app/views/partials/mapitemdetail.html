@@ -1,11 +1,10 @@
+<h3>{{selected.properties.type | itemType}}</h3>
 <div class="selectedItem" ng-if="selected" class="type-{{selected.properties.type}}">
-  <h3>{{selected.properties.type | itemType}}</h3>
   <h2>{{selected.properties.name}}</h2>
 
+  <a ng-if="selected.properties.url" href="{{selected.properties.url}}" title="Visit the website" class="visit-url">Visit website</a>
+
   <ul>
-    <li ng-if="selected.properties.url">
-      <a href="{{selected.properties.url}}" title="Visit the website">Visit website</a>
-    </li>
     <li ng-if="selected.properties.bus">
       <maki-icon type="bus">
         Bus stops here

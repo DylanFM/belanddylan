@@ -24,10 +24,11 @@
 }
 
 html {
-  font-family: $font-family;
+  font-family: $copy-font;
   font-weight: 400;
   background-color: $body-background;
   color: $base-type;
+  padding-bottom: 2.5em;
 
   @include mq($until: mobile) {
     font-size: 120%;
@@ -40,14 +41,13 @@ b, strong {
   font-weight: 700;
 }
 h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
   color: $heading;
   margin: 0 0 .75em;
 }
-h1, h2 {
+h1, h2, h3 {
   font-style: italic;
-}
-h1, h2 {
-  font-weight: 700;
+  font-weight: 400;
 }
 p {
   margin-top: 0;
@@ -84,7 +84,7 @@ h1 {
 section {
   margin: 0 auto;
 
-  &.map, &.tidbits, &.transport {
+  &.map, &.schedule, &.transport {
     margin-top: 2.5em;
   }
   &.tidbits, &.transport {
@@ -94,6 +94,11 @@ section {
     }
   }
 
+  @include mq($until: tablet) {
+    h3 {
+      text-align: center;
+    }
+  }
   @include mq($from: tablet) {
     article { // Contains a number of items
       column-count: 2;
@@ -112,8 +117,6 @@ section {
       column-gap: 4.25em;
     }
     &.tidbits, &.transport {
-      margin-top: 3em;
-
       article {
         margin-left: 3.5em;
         margin-right: 3.5em;

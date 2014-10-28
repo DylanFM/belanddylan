@@ -78,3 +78,4 @@ angular.module('belanddylanApp')
         group = L.featureGroup items.map((i) -> i.marker)
         group.addTo map
         map.fitBounds group.getBounds()
+        map.zoomOut()
