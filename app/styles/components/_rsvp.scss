@@ -2,6 +2,11 @@
   ol {
     margin-left: 1em;
     margin-right: 1em;
+
+    @include mq($from: tablet) {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
   }
   &, input, p {
     text-align: center;
