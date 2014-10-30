@@ -1,7 +1,5 @@
-@include mq($until: tablet) {
-  .angular-leaflet-map {
-    height: 100vh;
-  }
+.angular-leaflet-map {
+  height: 80vh;
 }
 @include mq($from: tablet) {
   .angular-leaflet-map {

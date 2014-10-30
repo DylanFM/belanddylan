@@ -26,13 +26,11 @@
 html {
   font-family: $copy-font;
   font-weight: 400;
-  background-color: $body-background;
+  background: $body-background url('/images/bg.png') 0 0 repeat;
   color: $base-type;
   padding-bottom: 2.5em;
+  font-size: 120%;
 
-  @include mq($until: mobile) {
-    font-size: 120%;
-  }
   @include mq($from: tablet) {
     font-size: 125%;
   }
@@ -74,9 +72,6 @@ a {
   }
 }
 
-.global {
-  margin-top: 2.5em;
-}
 h1 {
   margin: 0;
 }
@@ -89,8 +84,13 @@ section {
   }
   &.tidbits, &.transport {
     article {
-      margin-left: 2em;
-      margin-right: 2em;
+      margin-left: 1.25em;
+      margin-right: 1.25em;
+
+      @include mq($from: mobileLandscape) {
+        margin-left: 2em;
+        margin-right: 2em;
+      }
     }
   }
 

@@ -1,10 +1,21 @@
 .prompt {
-  padding: 1em 0;
-
   &, p {
     text-align: center;
   }
+  p {
+    margin-bottom: 1.5em;
+  }
   h2 {
     margin-top: 0;
+  }
+
+  @include mq($until: tablet) {
+    input {
+      text-align: center;
+    }
+    form span {
+      display: block;
+      margin-bottom: 1em;
+    }
   }
 }

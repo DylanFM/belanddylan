@@ -13,7 +13,7 @@ $heading: lighten($light-cool, 5%);
 $base-type: lighten($light-cool, 12%);
 
 $banner-type: #fff;
-$banner-bg: lighten($dark, 7%);
+$banner-bg: $base-dark;
 $banner-border: $light-cool;
 $banner-link: $base-light;
 $banner-link-active: $base-light;
@@ -23,12 +23,12 @@ $popup-bg: $mid;
 $popup-text: $base-type;
 $popup-header: #fff;
 
-$logo: lighten($light-cool, 5%);
+$logo: lighten($light-cool, 7%);
 $logo-alt: $light-cool;
 
-$border: $light-cool;
+$border: transparentize($light-cool, .3);
 
-$highlight-bg: lighten($dark, 18%);
+$highlight-bg: transparentize(lighten($dark, 18%), .4);
 $highlight-text: #fff;
 
 $link: lighten($light-cool, 5%);
@@ -37,10 +37,10 @@ $link-active: lighten($link, 10%);
 $link-focus: darken($link, 5%);
 
 // Form colours
-$control-border: lighten($light-cool, 4%);
+$control-border: $border;
 $control-background: lighten($light-cool, 1%);
 $control-colour: darken($mid, 10%);
 $placeholder-colour: $mid;
-$button-border: false;
+$button-border: $border;
 $button-background: lighten($light-cool, 2%);
 $button-colour: darken($mid, 10%);

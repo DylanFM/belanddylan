@@ -16,13 +16,12 @@
     box-sizing: border-box;
   }
   p, input, textarea {
-    margin-bottom: 1em;
-  }
-  .note {
-    font-style: italic;
-    font-size: 80%;
+    margin-bottom: 1.5em;
   }
   li {
-    margin-bottom: 1.5em;
+    margin-bottom: 2.5em;
+  }
+  .attending-yes .yay, .attending-no .nay {
+    background-color: darken($button-background, 12%);
   }
 }

@@ -3,10 +3,10 @@
   position: relative;
   overflow: hidden;
   background: $banner-bg;
-  height: 150px;
-  border-top: 1px solid $banner-border;
-  border-bottom: 1px solid $banner-border;
-  margin-bottom: 2.5em;
+  height: 60px;
+  border-top: 2px solid $banner-border;
+  border-bottom: 2px solid $banner-border;
+  margin-bottom: 1.5em;
 
   h2, img {
     position: absolute;
@@ -17,15 +17,39 @@
     line-height: 0;
     top: 52%;
     color: $banner-type;
-    font-size: 2.75em;
+    font-size: 1.75em;
     margin: 0;
     z-index: 2;
+    text-shadow: 3px 3px 3px transparentize($base-dark, 0.8);
   }
   img {
     top: 0;
     height: auto;
     opacity: .65;
     transition: opacity 1s ease-in-out;
+  }
+  @include mq($from: mobileLandscape) {
+    margin-bottom: 2em;
+    height: 95px;
+
+    h2 {
+      font-size: 2em;
+    }
+  }
+  @include mq($from: tablet) {
+    margin-bottom: 2.5em;
+    height: 150px;
+
+    h2 {
+      font-size: 2.75em;
+    }
+  }
+  @include mq($from: desktop) {
+    height: 170px;
+
+    h2 {
+      font-size: 3.25em;
+    }
   }
 
   // SVG clip possibilities
@@ -66,11 +90,15 @@ a.banner {
 .cmon-rsvp {
   display: block;
   text-align: center;
-  margin-top: 1em;
-  border-top: 1px solid $rsvp-border;
-  border-bottom: 1px solid $rsvp-border;
+  border-top: 2px solid $rsvp-border;
+  border-bottom: 2px solid $rsvp-border;
 
   h2 {
-    font-size: 3em;
+    @include mq($from: tablet) {
+      font-size: 3em;
+    }
+    @include mq($from: desktop) {
+      font-size: 3.5em;
+    }
   }
 }

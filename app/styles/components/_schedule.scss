@@ -1,9 +1,9 @@
 .schedule {
   ol {
-    margin: 0 1em;
+    margin: -1.5em 0 0;
   }
   li {
-    padding: .75em .5em;
+    padding: 1em;
     border-bottom: 1px solid $border;
 
     &:first-child {
@@ -14,6 +14,18 @@
       padding-bottom: 0;
     }
   }
+
+  @include mq($from: tablet) {
+    ol {
+      margin-top: 0;
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+    li {
+      padding: .75em .5em;
+    }
+  }
+
   .important {
     background: $highlight-bg;
     color: $highlight-text;

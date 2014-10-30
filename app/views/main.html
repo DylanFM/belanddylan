@@ -1,9 +1,11 @@
-<section class="prompt">
+<header class="global">
   <h1 ng-include="'/images/belanddylan.svg'"></h1>
+</header>
+<section class="prompt">
   <h2>Received your invite?</h2>
   <p>Enter the super secret password below.</p>
   <form ng-submit="checkAuth()">
-    <input type="password" ng-model="password" />
+    <span><input type="password" ng-model="password" /></span>
     <input type="submit" value="Enter" />
   </form>
 </section>
