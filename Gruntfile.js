@@ -427,21 +427,21 @@ module.exports = function (grunt) {
             dest: '/'
           },
           {
-            src: 'dist/views/*',
+            src: 'dist/views/**/*',
             dest: '/views/'
           },
           {
-            src: 'dist/images/*',
+            src: 'dist/images/**/*',
             dest: '/images/',
             gzip: true
           },
           {
-            src: 'dist/scripts/*',
+            src: 'dist/scripts/**/*',
             dest: '/scripts/',
             gzip: true
           },
           {
-            src: 'dist/styles/*',
+            src: 'dist/styles/**/*',
             dest: '/styles/',
             gzip: true
           }
