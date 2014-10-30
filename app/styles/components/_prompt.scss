@@ -4,6 +4,11 @@
   }
   p {
     margin-bottom: 1.5em;
+
+    &.error {
+      color: $base-light;
+      margin-top: 1.5em;
+    }
   }
   h2 {
     margin-top: 0;

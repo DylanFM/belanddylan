@@ -35,3 +35,4 @@ angular.module('belanddylanApp')
           $location.path '/guests'
         else
           $window.analytics.track 'Authentication fail', password: password
+          false

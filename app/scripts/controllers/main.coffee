@@ -10,4 +10,11 @@
 angular.module('belanddylanApp')
   .controller 'MainCtrl', ($scope, Auth, Analytics) ->
 
-    $scope.checkAuth = -> Auth.check($scope.password)
+    $scope.error = false
+
+    $scope.clearError = ->
+      $scope.error = false
+
+    $scope.checkAuth = ->
+      unless Auth.check $scope.password
+        $scope.error = true
