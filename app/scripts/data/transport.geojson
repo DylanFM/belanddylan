@@ -1,0 +1,140 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Slade Park",
+        "train": "",
+        "bus": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.565043926239,
+          -33.241038563007024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Norah Head Sports Ground",
+        "train": "",
+        "bus": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.56651377677917,
+          -33.280485244470604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Warnervale Train Station",
+        "train": true,
+        "bus": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.4488935470581,
+          -33.24742731701618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wyong Train Station",
+        "train": true,
+        "bus": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.4252257347107,
+          -33.28558859618054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "M1 Wyong Road exit",
+        "driving_poi": "true",
+        "train": "",
+        "bus": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.40100002288816,
+          -33.30635768291665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dooralong Hall",
+        "venue": "true",
+        "train": "",
+        "bus": "true",
+        "driving_poi": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.35488748550415,
+          -33.188968973366144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yarramalong Road intersection",
+        "driving_poi": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3976365327835,
+          -33.27440388394382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hue Hue Road turn",
+        "driving_poi": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.40479803085327,
+          -33.276013960889856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jilliby Road turn",
+        "driving_poi": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3990044593811,
+          -33.262159151967836
+        ]
+      }
+    }
+  ]
+}

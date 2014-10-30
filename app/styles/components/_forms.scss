@@ -1,0 +1,39 @@
+input, textarea {
+  background-color: transparentize($control-background, 0.1);
+  border: 2px solid $control-border;
+  color: $control-colour;
+  transition: background-color .4s ease-in;
+  transition: border-color .4s ease-in;
+
+  &:focus {
+    outline: none;
+    background-color: lighten($control-background, 5%);
+  }
+  &:invalid {
+    border-color: transparentize(red, 0.5);
+  }
+}
+::placeholder {
+  color: $placeholder-colour;
+}
+button, input[type="submit"] {
+  background: $button-background;
+  color: $button-colour;
+  cursor: pointer;
+  transition: background-color .4s ease-in;
+  @if $button-border {
+    border: 2px solid $button-border;
+  } @else {
+    border: none;
+  }
+}
+input, button, textarea {
+  font-family: $copy-font;
+  font-size: inherit;
+  padding: .3em .75em;
+  border-radius: .2em;
+
+  @include mq($until: tablet) {
+    padding: .5em 1em;
+  }
+}

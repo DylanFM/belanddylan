@@ -1,0 +1,62 @@
+.schedule {
+  ol {
+    margin: -1.5em 0 0;
+  }
+  li {
+    padding: 1em;
+    border-bottom: 1px solid $border;
+
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+
+  @include mq($from: tablet) {
+    ol {
+      margin-top: 0;
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+    li {
+      padding: .75em .5em;
+    }
+  }
+
+  .important {
+    background: $highlight-bg;
+    color: $highlight-text;
+
+    h3 {
+      color: $highlight-text;
+    }
+  }
+  h3, p {
+    margin: 0;
+  }
+  @include mq($until: tablet) {
+    text-align: center;
+  }
+  @include mq($from: tablet) {
+    @include clearfix;
+
+    li {
+      @include clearfix;
+    }
+    h3, p {
+      display: inline-block;
+    }
+    h3 {
+      font-size: 100%;
+      width: 14%;
+      font-weight: normal;
+      float: left;
+    }
+    p {
+      width: 86%;
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dooralong Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.35488748550415,
+          -33.188968973366144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Norah Head Holiday Park",
+        "url": "http://norahheadhp.com.au",
+        "motel": "",
+        "caravan_park": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.56609535217282,
+          -33.28405493133557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Budgewoi Holiday Park",
+        "url": "http://budgewoihp.com.au",
+        "caravan_park": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.56680345535278,
+          -33.23551083729263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hibiscus Lakeside Motel",
+        "url": "http://www.hibiscuslakesidemotel.com.au",
+        "motel": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.5616750717163,
+          -33.23800553600037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sea n Sun Motel",
+        "url": "http://www.wotif.com/hotels/sea-n-sun-motel.html",
+        "motel": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.5609884262085,
+          -33.26080450106271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Best Western Bridge View Motel",
+        "url": "http://www.bestwestern.com.au/gorokan/hotels/best-western-bridge-view-motel/",
+        "motel": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.51641011238098,
+          -33.25991634105437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Magenta Shores Resort",
+        "url": "http://www.pullmanhotels.com/gb/hotel-8791-pullman-magenta-shores-resortex-quay-west-magenta-shores/index.shtml",
+        "resort": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.52270793914792,
+          -33.31006977071091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Norah Head Lighthouse Cottages",
+        "url": "http://www.norahheadlighthouse.com.au/accommodation/",
+        "something_else": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.57540798187256,
+          -33.281714022507195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mercure Kooindah Waters Central Coast",
+        "url": "http://www.mercurekooindahwaters.com.au/",
+        "motel": "",
+        "resort": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.44041776657104,
+          -33.28544509651921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tuggerah Lakes Motel",
+        "url": "http://tuggerahlakesmotel.com.au",
+        "motel": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.513352394104,
+          -33.25894742892847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yarramalong Manor",
+        "url": "http://www.yarramalongmanor.com.au/",
+        "motel": "true",
+        "resort": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.279399394989,
+          -33.22487616140111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Misty Mountain Farm Stay",
+        "url": "http://www.yarramalongvalley.com.au/yarramalong_accommodation/misty_mountain_farm_stay.html",
+        "farm_stay": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.33851528167725,
+          -33.2689051800625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yarramalong Valley Farm Stay",
+        "url": "http://www.stayz.com.au/accommodation/nsw/central-coast/central-coast-hinterland/31527",
+        "farm_stay": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.33247494697568,
+          -33.26046359222835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Escala Luxury Suites",
+        "url": "http://escalaluxurysuites.com.au",
+        "motel": "",
+        "something_else": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3644576072693,
+          -33.27553408033792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amazement Farm & Fun Park Farm Stay",
+        "url": "http://www.amazement.com.au/info.php?id=17",
+        "farm_stay": "true"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3898527622223,
+          -33.27136304482269
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+.angular-leaflet-map {
+  height: 80vh;
+}
+@include mq($from: tablet) {
+  .angular-leaflet-map {
+    height: 450px;
+  }
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background-color: $popup-bg;
+}
+.leaflet-popup-content {
+  margin: 0;
+}
+.leaflet-popup-content-wrapper {
+  border-radius: 0;
+  color: $popup-text;
+  font-family: $copy-font;
+
+  .selectedItem {
+    position: relative;
+    padding: 1em;
+  }
+  .visit-url {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+  }
+  h2, h3 {
+    color: $popup-header;
+    margin: 0;
+  }
+  h3 {
+    font-family: $copy-font;
+    font-style: normal;
+    background: darken($mid, 7%);
+    border-bottom: lighten($mid, 3%);
+    padding: .75em 1em;
+  }
+  li {
+    padding: .25em 0;
+
+    .icon img {
+      position: relative;
+      bottom: -8px;
+      margin-right: .5em;
+    }
+  }
+}

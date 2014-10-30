@@ -1,0 +1,32 @@
+header {
+  text-align: center;
+
+  &.global {
+    margin-top: 1.5em;
+
+    @include mq($from: tablet) {
+      margin-top: 2.5em;
+      margin-bottom: 1em;
+    }
+  }
+}
+h1 {
+  margin: 0;
+}
+svg {
+  width: 60%;
+  height: 100%;
+
+  @include mq($from: mobileLandscape) {
+    width: 45%;
+  }
+  @include mq($from: tablet) {
+    max-width: 240px;
+  }
+  .bel, .dylan {
+    fill: $logo-alt;
+  }
+  .and {
+    fill: $logo;
+  }
+}

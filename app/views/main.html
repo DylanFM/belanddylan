@@ -1,0 +1,12 @@
+<header class="global">
+  <h1 ng-include="'/images/belanddylan.svg'"></h1>
+</header>
+<section class="prompt">
+  <h2>Received your invite?</h2>
+  <p>Enter the super secret password below.</p>
+  <form ng-submit="checkAuth()">
+    <span><input type="password" ng-model="password" ng-focus="clearError()" ng-change="clearError()" /></span>
+    <input type="submit" value="Enter" />
+    <p class="error" ng-if="error">Whoops! Wrong password. Check your invitation.</p>
+  </form>
+</section>

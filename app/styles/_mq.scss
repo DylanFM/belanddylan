@@ -1,0 +1,14 @@
+$mq-responsive: true;
+
+$mq-breakpoints: (
+  mobile:           320px,
+  mobileLandscape:  480px,
+  tablet:           740px,
+  desktop:          980px,
+  wide:             1300px
+);
+
+$mq-show-breakpoints: (mobile, mobileLandscape, tablet, desktop, wide);
+
+// Import sass-mq stuff
+@import "../../bower_components/sass-mq/_mq.scss";

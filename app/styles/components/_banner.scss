@@ -1,0 +1,104 @@
+.banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: $banner-bg;
+  height: 60px;
+  border-top: 2px solid $banner-border;
+  border-bottom: 2px solid $banner-border;
+  margin-bottom: 1.5em;
+
+  h2, img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  h2 {
+    line-height: 0;
+    top: 52%;
+    color: $banner-type;
+    font-size: 1.75em;
+    margin: 0;
+    z-index: 2;
+    text-shadow: 3px 3px 3px transparentize($base-dark, 0.8);
+  }
+  img {
+    top: 0;
+    height: auto;
+    opacity: .65;
+    transition: opacity 1s ease-in-out;
+  }
+  @include mq($from: mobileLandscape) {
+    margin-bottom: 2em;
+    height: 95px;
+
+    h2 {
+      font-size: 2em;
+    }
+  }
+  @include mq($from: tablet) {
+    margin-bottom: 2.5em;
+    height: 150px;
+
+    h2 {
+      font-size: 2.75em;
+    }
+  }
+  @include mq($from: desktop) {
+    height: 170px;
+
+    h2 {
+      font-size: 3.25em;
+    }
+  }
+
+  // SVG clip possibilities
+
+  //.bg {
+  //  z-index: 1;
+  //  opacity: 0.15;
+  //}
+  //.clipped {
+  //  z-index: 2;
+  //  -webkit-clip-path: url(#svgTextPath);
+  //  clip-path: url(#svgTextPath);
+  //}
+  //svg {
+  //  width: 0;
+  //  height: 0;
+  //}
+}
+a.banner {
+  &:link, &:visited {
+    h2 {
+      text-decoration: underline;
+      color: $banner-link;
+    }
+  }
+  &:active, &:hover, &:focus {
+    img {
+      opacity: .9;
+    }
+    h2 {
+      color: $banner-link-active;
+    }
+  }
+}
+.map .banner {
+  margin-bottom: 0;
+}
+.cmon-rsvp {
+  display: block;
+  text-align: center;
+  border-top: 2px solid $rsvp-border;
+  border-bottom: 2px solid $rsvp-border;
+
+  h2 {
+    @include mq($from: tablet) {
+      font-size: 3em;
+    }
+    @include mq($from: desktop) {
+      font-size: 3.5em;
+    }
+  }
+}
