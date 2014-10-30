@@ -393,6 +393,56 @@ module.exports = function (grunt) {
       ]
     },
 
+    // S3 deployment settings
+    aws: grunt.file.readJSON('./aws.json'),
+    s3: {
+      options: {
+        key: '<%= aws.key %>',
+        secret: '<%= aws.secret %>',
+        bucket: '<%= aws.bucket %>',
+        region: '<%= aws.region %>',
+        access: 'public-read',
+        headers: {
+          // Two Year cache policy (1000 * 60 * 60 * 24 * 730)
+          "Cache-Control": "max-age=630720000, public",
+          "Expires": new Date(Date.now() + 63072000000).toUTCString()
+        },
+        gzip: true
+      },
+      dev: {
+        upload: [
+          {
+            src: 'dist/*.html',
+            dest: '/',
+            options: {
+              headers: {
+                // 10 min cache policy (1000 * 60 * 10)
+                "Cache-Control": "max-age=600000, public",
+                "Expires": new Date(Date.now() + 600000).toUTCString()
+              }
+            }
+          },
+          {
+            src: 'dist/*',
+            dest: '/'
+          },
+          {
+            src: 'dist/images/*',
+            dest: '/images/',
+            gzip: true
+          },
+          {
+            src: 'dist/scripts/*',
+            dest: '/scripts/'
+          },
+          {
+            src: 'dist/styles/*',
+            dest: '/styles/'
+          }
+        ]
+      }
+    },
+
     // Test settings
     karma: {
       unit: {
@@ -446,6 +496,11 @@ module.exports = function (grunt) {
     'filerev',
     'usemin',
     'htmlmin'
+  ]);
+
+  grunt.registerTask('deploy', [
+    'build',
+    's3'
   ]);
 
   grunt.registerTask('default', [
