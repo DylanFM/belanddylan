@@ -15,7 +15,11 @@ angular.module('belanddylanApp')
           $location.path '/'
 
       @check: (password) ->
-        if password is 'test'
+        # Hash the password
+        sha    = new jsSHA password, 'TEXT'
+        hashed = sha.getHash 'SHA-512', 'HEX'
+        # Does the hash match our pre-hashed password?
+        if hashed is '59f9f6f106be0814dbbfd2996dd95331d769c1b1dbe7fad7c0cd4d6506e113b43c8a2339eebfac5aa77d623ea3441e78e7d7bdf3f6ee300bee7103e87df71a49'
           # Track auth'd with cookie
           $cookieStore.put 'authd', 'yep'
           # Also make a uuid and store it in a cookie
@@ -30,5 +34,4 @@ angular.module('belanddylanApp')
           # Redirect to guests
           $location.path '/guests'
         else
-          $window.analytics.track 'Authentication fail',
-            password: password
+          $window.analytics.track 'Authentication fail', password: password
