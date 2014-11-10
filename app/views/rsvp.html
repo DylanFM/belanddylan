@@ -7,12 +7,12 @@
   </header>
 
   <ol>
-    <li id="step-start">
+    <li id="step-start" ng-show="step != 'done'">
       <p>First of all, what's your name(s)?</p>
-      <input type="text" ng-model="name" enter-submit="setStep('rsvp')" placeholder="Your name" required />
-      <button ng-show="step === 'start' && name.length" ng-click="setStep('rsvp')">That's me!</button>
+      <input type="text" ng-model="name" enter-submit="setStep('rsvp')" placeholder="Names of people RSVPing" required />
+      <button ng-show="step === 'start' && name.length" ng-click="setStep('rsvp')">RSVP</button>
     </li>
-    <li ng-show="step != 'start'" id="step-rsvp" class="attending-{{details.attending}}">
+    <li ng-show="step != 'start' && step != 'done'" id="step-rsvp" class="attending-{{details.attending}}">
       <p>Hey! So, think you can make it on the big day?</p>
       <button class="yay" ng-click="setStep('yay')">Sure can!</button>
       <button class="nay" ng-click="setStep('nay')">No :(</button>
@@ -20,15 +20,16 @@
     <li ng-show="step == 'nay'" id="step-nay">
       <p>Oh no! We would've loved to have seen you there.</p>
     </li>
-    <li ng-show="step == 'yay' || step == 'done'" id="step-yay">
+    <li ng-show="step == 'yay'" id="step-yay">
       <p>Awesome!! Now, can we have your email and phone number in case we need to contact you in the lead up?</p>
       <input type="email" ng-model="email" enter-submit="setStep('done')" placeholder="Your email" />
       <input type="tel" ng-model="phone" enter-submit="setStep('done')" placeholder="Your phone number" />
       <textarea ng-model="extra" placeholder="e.g dietary requirements&hellip; number of people&hellip; accommodation plans&hellip; drinking preference(s)&hellip; think you'll need the bus?" rows="4"></textarea>
-      <button ng-show="email.length || phone.length" ng-click="setStep('done')">There you go</button>
+      <button ng-show="email.length || phone.length" ng-click="setStep('done')">Finish</button>
     </li>
     <li ng-show="step == 'done'" id="step-done">
-      <h2>Thanks!</h2>
+      <h2>Yay! Thanks!</h2>
+      <p>You may receive an email or two from us in the lead up to the wedding.</p>
       <a href="/#/guests" title="Back to the main guests back">Back</a>
     </li>
   </ol>
